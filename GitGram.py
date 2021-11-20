@@ -134,6 +134,7 @@ def helloWorld():
 def git_api(groupid):
     """Requests to api.github.com"""
     data = request.json
+    print(data)
     if not data:
         return f"<b>Add this url:</b> {ip_addr}/{groupid} to webhooks of the project"
 
